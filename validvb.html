@@ -1,0 +1,28 @@
+<html>
+    <meta http-equiv="X-UA-Compatible"  content="IE=10"/>
+    <head>
+        <title>Simple Validation</title>
+        <script language="vbscript" type="text/vbscript"> 
+            sub validate()
+            x=document.getElementById("T1").value
+            If IsNumeric(x) Then
+            If x < 1 Or x > 10 Then
+              MsgBox "Please enter a number between 1 and 10."
+            Else
+              MsgBox "Thank you."
+            End If
+          Else
+            MsgBox "Please enter a numeric value."
+          End If
+            end sub
+        </script>
+    </head>
+    <body>
+        <h3>Simple Validation</h3><hr>
+        <form name="Vf">
+            Enter a value between 1 and 10: 
+            <input id="T1" type="text" />
+            <input type="button" value="Submit" onclick ="validate()" >
+        </form>
+    </body>
+</html>

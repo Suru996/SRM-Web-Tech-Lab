@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Control And Loop Example</title>
+        <script>
+            function A()
+            {
+                var sub=["Web Tech","Adv. Java","Data Structure","CN"];
+            var i,l,t="";
+            var day;
+            switch(new Date().getDay())
+            {
+                case 0:
+                    day="Sunday";
+                    break;
+                case 1:
+                    day="Monday";
+                    break;
+                case 2:
+                    day="Tuesday";
+                    break;
+                case 4:
+                    day:"Wednesday";
+                    break;
+                case 5:
+                    day:"Thursday";
+                    break;
+                case 6:
+                    day:"Friday";
+                    break;
+                case 7:
+                    day="Saturday";
+                    break;
+            }
+            document.getElementById("T").innerHTML="Today is "+day;
+            l=sub.length;
+            for(i=0;i<l;i++)
+            {
+                t= t+sub[i] +"<br>";
+            }
+            document.getElementById("TT").innerHTML=t;
+            }
+            
+        </script>
+    </head>
+    <body onload="A()">
+        <h2 id="T"></h2>
+        <div id="TT"></div>
+    </body>
+</html>

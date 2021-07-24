@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Implementation of Selector Using Jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("p").css("color","red");
+                $(".p1").css("color","white");
+                $("#p1").css("color","pink");
+            });
+            jQuery(document).ready(function()
+            {
+                jQuery("body").css("background-color","black");
+            });
+        </script>
+    </head>
+    <body>
+        <p class="p1">This is first paragraph</p>
+        <p id="p1">This is second paragraph</p>
+        <p>This is third paragraph</p>
+    </body>
+</html>

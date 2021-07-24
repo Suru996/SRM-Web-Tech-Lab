@@ -1,0 +1,42 @@
+<html>
+  <meta http-equiv="X-UA-Compatible"  content="IE=10"/>
+  <head>
+    <title>Hello</title>
+    <script language = "vbscript" type = "text/vbscript">
+      sub A()
+        Dim z
+        s=CStr(document.getElementById("d").value)
+        x=cint(document.getElementById("a").value)
+        y=cint(document.getElementById("b").value)
+        if s="+" then
+          z=x+y
+        elseif  s="-" then
+          z=x-y
+        elseif s="*" then
+          z=x*y
+        elseif s="/" then
+          z=x/y
+        else
+          z=x MOD y
+        end if
+        document.getElementById("c").value = z
+      end sub
+</script>
+</head>
+<body>
+<label>Enter first number </label>&emsp;&emsp;
+<input type="text" id="a"></br>
+<label>Enter second number </label>&emsp;
+<input type="text" id="b"></br>
+<label>Select your choice </label>&emsp;&emsp;
+<select Name="Select Symbol" Size="Number_of_options" id="d">  
+  <option value="+"> + </option>  
+  <option value="-"> - </option>  
+  <option value="*"> * </option>  
+  <option value="/"> / </option> 
+  <option value="%"> % </option> 
+</select> </br>
+<input type="button" onclick="A()" value="Check"></br></br>
+<input type="text" id="c"> 
+</body>
+</html>

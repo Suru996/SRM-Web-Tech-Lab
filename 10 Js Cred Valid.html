@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Credential Validation</title>
+        <script>
+            function A()
+            {
+                var em=document.getElementById("e").value;
+                var pw=document.getElementById("p").value;
+                if(pw.length<6)
+                 {
+                     alert("Password length must be more than 6");
+                 }
+                 else if(em.indexOf("@")==-1)
+                 {
+                     alert("Enter valid email");
+                 }
+                 else
+                    alert("Thank you Your credential has been verified");
+            }
+        </script>
+    </head>
+    <body>
+        <form >
+            Enter your Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" id="e" placeholder="example@provider.com" required/><br/>
+            Enter your Username :&nbsp;<input type="text" id="un" placeholder="Full Name" required/><br/>
+            Enter your Password :&nbsp;&nbsp;<input type="password" id="p" placeholder="Password" required/></br>
+            <input type="submit" onclick="A()"/>
+        </form>
+    </body>
+</html>

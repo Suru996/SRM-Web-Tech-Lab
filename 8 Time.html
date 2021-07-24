@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Current Time</title>
+    <style>
+        div {
+            color: green;
+            font-size: 2.5in;
+
+        }
+    </style>
+    <script>
+        function A() {
+            var today = new Date();
+            var hour = today.getHours();
+            var min = today.getMinutes();
+            var sec = today.getSeconds();
+            document.getElementById("a").innerHTML = hour + " : " + min + " : " + sec;
+            setInterval("A()", 1000);
+        }
+    </script>
+</head>
+
+<body onload="A()">
+    <div id="a" style="text-align: center;"></div>
+</body>
+
+</html>

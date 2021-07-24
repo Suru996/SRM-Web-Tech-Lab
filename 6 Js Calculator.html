@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <style>
+            table,tr,td
+            {
+                padding:9;
+                border: 2px solid black; 
+                border-spacing:8px;
+            }
+        </style>
+        <script>
+            function A(n)
+            {
+                document.getElementById("Cal").value += n;
+            }
+            function B()
+            {
+                document.getElementById("Cal").value ='';  
+            }
+            function C()
+            {
+                a=document.getElementById("Cal").value;
+                c = eval(a);
+                alert(a + " = " + c);
+            } 
+            function D()
+            {
+                a = document.getElementById("Cal").value;
+                document.getElementById("Cal").value = a.slice(0,-1);
+            }
+        </script>
+    </head>
+    <body>
+        <table align = "center">
+            <tr>
+                <th colspan="4">Simple Calculator</th>
+            </tr>
+            <tr>
+                <td colspan ="4">
+                    <input type="text" id="Cal" placeholder="0"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button"  value="1" onclick="A(1)"/>
+                </td>
+                <td>
+                    <input type="button"  value="2" onclick="A(2)"/>
+                </td>
+                <td>
+                    <input type="button"  value="3" onclick="A(3)"/>
+                </td>
+                <td>
+                    <input type="button"  value="+" onclick="A('+')"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button"  value="4" onclick="A(4)"/>
+                </td>
+                <td>
+                    <input type="button"  value="5" onclick="A(5)"/>
+                </td>
+                <td>
+                    <input type="button"  value="6" onclick="A(6)"/>
+                </td>
+                <td>
+                    <input type="button"  value="-" onclick="A('-')"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button"  value="7" onclick="A(7)"/>
+                </td>
+                <td>
+                    <input type="button"  value="8" onclick="A(8)"/>
+                </td>
+                <td>
+                    <input type="button"  value="9" onclick="A(9)"/>
+                </td>
+                <td>
+                    <input type="button"  value="*" onclick="A('*')"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button"  value="%" onclick="A('%')"/>
+                </td>
+                <td>
+                    <input type="button"  value="0" onclick="A(0)"/>
+                </td>
+                <td>
+                    <input type="button"  value="." onclick="A('.')"/>
+                </td>
+                <td>
+                    <input type="reset"  value="C" onclick="B()"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button"  value="Check" onclick="C()"/>
+                </td>
+                <td colspan="2">
+                    <input type="button"  value="Del" onclick="D()"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

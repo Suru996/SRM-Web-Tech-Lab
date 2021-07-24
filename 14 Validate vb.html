@@ -1,0 +1,28 @@
+<html>
+   <meta http-equiv="X-UA-Compatible"  content="IE=10"/>
+   <head>
+      <script language = "vbscript" type = "text/vbscript">
+         sub sayhello()
+            n=document.getElementById("n1").value
+            p = document.f1.p1.value
+            l=Len(p)
+            if n=empty then
+               Msgbox "Name cannot be null"
+            end if
+            if l>6 and n<>empty  then
+               MsgBox "Access Granted"
+            else  
+               MsgBox "Wrong Password"
+            end if
+         end sub
+      </script>
+   </head>
+   
+   <body>
+      <form name="f1">
+         Name<input type="text" id="n1" /><br/>
+         Pass<input type="password" id="p1" name="p1"/><br/>
+         <input type = "button" name="Submit" onclick="sayhello()"  value = "Submit"/>
+      </form>
+      </body>
+</html>

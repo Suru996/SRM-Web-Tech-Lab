@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Implementation of Array using jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                var u=["SRM","VIT","st.Peters"];
+                $.each(u,function(i,v)
+                {
+                    $("#p1").append(i+" : "+ v + '<br/>');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="p1"></p>
+    </body>
+</html>

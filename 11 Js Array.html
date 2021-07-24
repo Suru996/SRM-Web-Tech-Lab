@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Array Implementation</title>
+        <script>
+            var c=["red","yellow","blue","green"];
+            var d=c.length;
+            var i=0;
+            function A()
+            {
+                    document.getElementById("h").style.color=c[i];
+                    i++;
+            }
+            window.setInterval("A()",3000);
+        </script>
+    </head>
+    <body onload="A()" id="h">
+        
+        <ol>
+            <li>Course</li>
+            <ul>
+                <li>Computer Network</li>
+                <li>Adv Java</li>
+                <li>Web Tech</li>
+            </ul>
+        </ol>
+    </body>
+</html>

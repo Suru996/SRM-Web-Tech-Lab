@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Implementation of Css Using jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("input").click(function()
+                {
+                    $("p").css("background-color","yellow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Computer Network</p>
+        <p>Adv Java</p>
+        <p>Web Tech</p>
+        <p>Data Structure</p>
+        <input type="button" value="Bgcolor of para"/> 
+    </body>
+</html>

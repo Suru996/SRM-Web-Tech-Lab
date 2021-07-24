@@ -1,0 +1,18 @@
+<html>
+    <meta http-equiv="x-ua-Compatible" content="IE=9"/>
+    <head>
+       <script type = "text/Vbscript" >
+         On Error Resume Next
+         n = 10
+         x = 0
+         y = n / x
+         Msgbox(Err.Number)
+         If Err.Number <> 0 Then
+         y =  "Opps !" &Err.Description
+         End If
+         document.Write(y) 
+       </script>
+    </head>
+    <body>
+    </body>
+ </html>

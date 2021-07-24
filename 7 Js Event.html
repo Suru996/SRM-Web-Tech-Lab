@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+TextBox Color
+</title>
+</head>
+<body>
+<form id="myform">
+<input type="text" id="myinput">
+</form>
+<script>
+var x=document.getElementById("myform");
+x.addEventListener("focus",myFocusFunction,true);
+x.addEventListener("blur",myBlurFunction,true);
+function myFocusFunction()
+{
+document.getElementById("myinput").style.backgroundColor="yellow";
+}
+function myBlurFunction()
+{
+document.getElementById("myinput").style.backgroundColor="red";
+}
+</script>
+</body>
+</html>
+
+ 

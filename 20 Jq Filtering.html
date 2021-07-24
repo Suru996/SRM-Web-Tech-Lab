@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filtering Using jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#t1").on("keyup",function() 
+                {
+                    var value = $(this).val().toLowerCase();
+                    $("li").filter(function() 
+                    {
+                        $(this).toggle(
+                            $(this).text().toLowerCase().indexOf(value) > -1);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Type something</p>
+        <input id="t1" type="text"  placeholder="Search">
+        <ul>
+            <li>Alson</li>
+            <li>Utsav</li>
+            <li>Sujay</li>
+            <li>Swomya</li>
+        </ul>
+    </body>
+</html>
